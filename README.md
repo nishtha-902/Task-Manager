@@ -51,8 +51,6 @@ Follow these steps to get the Task Manager up and running on your local machine:
    ```bash
    npm install
 
-   npm install framer-motion
-
 
 4. **Run the Application**
 
