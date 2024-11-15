@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# Task Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Overview
 
-## Available Scripts
+The Task Manager App is a simple yet powerful tool to help you manage your tasks efficiently. Built with **React** and **TypeScript**, this application allows you to add, search, and prioritize tasks. It also includes features to mark tasks as complete and delete them, with data persistence using **localStorage**.
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Add Tasks**: Create tasks with a title and assign a priority level (Low, Medium, High).
+- **Task Persistence**: All tasks are stored in `localStorage`, ensuring they are saved even after refreshing the page.
+- **Delete Tasks**: Remove tasks when they are no longer needed.
+- **Task Completion**: Mark tasks as complete/incomplete with a simple toggle.
+- **Search Tasks**: Quickly find tasks using a search bar.
+- **Priority Sorting**: Sort tasks by priority or completion status.
+- **UI Animations**: Smooth animations for adding, deleting, and updating tasks using `framer-motion`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠️ Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**: Frontend framework for building user interfaces.
+- **TypeScript**: For type safety and enhanced development experience.
+- **Framer Motion**: Library for animations.
+- **CSS**: Custom styles for a clean and responsive UI.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚧 Assumptions Made
 
-### `npm run build`
+- The tasks are identified using unique timestamps (`Date.now()`) as IDs.
+- Priority levels are limited to **Low**, **Medium**, and **High**.
+- Tasks are stored locally using `localStorage`, so they will be available only on the same browser and device.
+- The `max-height` of the task list container is set to `500px` to prevent UI overflow, and it will show a scrollbar if the task count exceeds the visible limit.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Setup & Launch
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these steps to get the Task Manager up and running on your local machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- **Node.js** (version 14 or above)
+- **npm** (version 6 or above)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the Repository**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```bash
+   git clone https://github.com/your-username/task-manager.git
+   cd task-manager
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. **Install Dependencies**
 
-## Learn More
+   ```bash
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   npm install framer-motion
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+4. **Run the Application**
+
+   ```bash
+   npm start
+   
+6. **Access the Application**
+
+   Open your browser and go to:  http://localhost:3000
+
+ ## 💡 Future Improvements
+
+Add due dates for tasks.
+Implement user authentication for multiple users.
+Dark mode for a better user experience.
+Drag-and-drop support for reordering tasks.
+
+## 🤝 Contributions
+Contributions are welcome! Feel free to submit a pull request or open an issue to improve the project.
