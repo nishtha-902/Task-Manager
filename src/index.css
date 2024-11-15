@@ -1,13 +1,79 @@
 body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #e8e5f7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 550px;
+  background-color: #f6f3c3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  max-height: 500px; /* Set a max-height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+h1{
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.task-input {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.task-input input,
+.task-input select {
+  padding: 5px;
+}
+
+.task-list {
+  margin-top: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-item.completed {
+  background-color: #c1edc1;
+}
+
+.task-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f44336;
+}
+
+button{
+  border-radius: 20px;
+  border: 1px solid rgb(10, 10, 10);
+  width: 200px;
+  height: 40px;
+}
+
+button:hover{
+  background-color: #e3e3e3;
+  border: 1px solid black;
+}
+
+.btns{
+  display: flex;
+  justify-content:space-around;
 }
