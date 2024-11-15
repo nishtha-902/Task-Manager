@@ -22,6 +22,9 @@ The Task Manager App is a simple yet powerful tool to help you manage your tasks
 - **CSS**: Custom styles for a clean and responsive UI.
 
 
+![image](https://github.com/user-attachments/assets/16798e09-b965-41c9-a865-6f01574d7374)
+
+
 ## 🚧 Assumptions Made
 
 - The tasks are identified using unique timestamps (`Date.now()`) as IDs.
